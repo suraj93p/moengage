@@ -9,11 +9,6 @@ class SearchBox extends Component {
         debounce(this.props.setSearchText(value), 5000);
     }
 
-    searchForData = (e) => {
-        e.preventDefault();
-        this.props.getData();
-    }
-
     render() {
         const { searchText } = this.props;
         return (
@@ -21,11 +16,6 @@ class SearchBox extends Component {
                 <div className='header'>Search Result</div>
                 <form className='search-box'>
                     <input className='input-text' type='text' name='searchText' value={searchText} onChange={this.handleOnChange} />
-                    <button
-                        disabled={searchText === ''}
-                        className={'btn-medium ' + (searchText === '' ? 'disable-btn' : '')}
-                        type='submit'
-                        onClick={this.searchForData}>Search</button>
                 </form>
             </div>
         )

@@ -18,7 +18,7 @@ class Result extends Component {
 
     render() {
         let { searchText, data, pageNum } = this.props;
-        let numOfPages = data.length / 10 + 1;
+        let numOfPages = (data.length % 10 === 0) ? data.length / 10 : (data.length / 10 + 1);
         data = data.slice(pageNum * 10, (pageNum + 1) * 10);
         return (
             <div className='container'>
