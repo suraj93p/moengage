@@ -1,0 +1,38 @@
+.header {
+    background-color: dodgerblue;
+    color: floralwhite;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.container {
+    border: 1px solid dodgerblue;
+    margin: 10px 0;
+}
+
+.search-box {
+    margin: 10px;
+}
+
+.btn-medium {
+    background-color: dodgerblue;
+    color: floralwhite;
+    font-family: sans-serif;
+    padding: 10px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.disable-btn {
+    background-color: grey;
+    color: floralwhite;
+    font-family: sans-serif;
+    padding: 10px;
+    margin-left: 40px;
+    cursor: default;
+}
+
+.input-text {
+    padding: 10px;
+    width: 200px;
+}
